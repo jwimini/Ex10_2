@@ -18,9 +18,9 @@
         android:id="@+id/imgv"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/zhf"
+        android:src="@drawable/i1"
         android:layout_gravity="center_horizontal"
-        android:scaleType="fitXY"/>
+        />
 
     <TableLayout
         android:stretchColumns="0"
