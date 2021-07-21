@@ -35,7 +35,7 @@ public class ResultActivity extends AppCompatActivity {
 
         int[] tvIds = {R.id.text1,R.id.text2,R.id.text3,R.id.text4,R.id.text5,R.id.text6,R.id.text7,R.id.text8,R.id.text9};
         int[] rbIds = {R.id.rating1,R.id.rating2,R.id.rating3,R.id.rating4,R.id.rating5,R.id.rating6,R.id.rating7,R.id.rating8,R.id.rating9};
-        int[] imgSrcIds = {R.drawable.ad,R.drawable.emdnls,R.drawable.qe,R.drawable.v,R.drawable.vhsk,R.drawable.vvvv,R.drawable.g,R.drawable.zd,R.drawable.zhf,};
+        int[] imgSrcIds = {R.drawable.i1,R.drawable.i2,R.drawable.i3,R.drawable.i4,R.drawable.i5,R.drawable.i6,R.drawable.i7,R.drawable.i8,R.drawable.i9};
 
 
         for (int i = 0; i< tv.length; i++){

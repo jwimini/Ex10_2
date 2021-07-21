@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.Toast;
 //Change ViewFillper
 public class MainActivity extends AppCompatActivity {
-    String[] imgNames = {"MY MELODY","Little Twin Stars","HELLO KITTY","BAD BADTZ-MARU","POCHACCO","포챠코","POMPOMPURIN","KEROKEROKEROPPI","KUROMI"};
+    String[] imgNames = {"도","경","수","변","백","현","오세훈","변백현","김준면"};
     int[] imgVIds={R.id.img01,R.id.img02,R.id.img03,R.id.img04,R.id.img05,R.id.img06,R.id.img07,R.id.img08,R.id.img09};
-    int[] votecount = new int[imgVIds.length];
+    int[] voteCount = new int[imgVIds.length];
     ImageView[] image = new ImageView[imgVIds.length];
 
     @Override
@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
             image[index].setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    votecount[index]++;
-                    Toast.makeText(getApplicationContext(),imgNames[index]+"총"+votecount[index]+"표",Toast.LENGTH_SHORT).show();
+                    voteCount[index]++;
+                    Toast.makeText(getApplicationContext(),imgNames[index]+voteCount[index]+"표",Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-            intent.putExtra("votecount", votecount);
+            intent.putExtra("voteCount", voteCount);
             intent.putExtra("imgNames",imgNames);
             startActivity(intent);
         }
